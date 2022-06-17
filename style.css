@@ -1,0 +1,246 @@
+/* CSS RESET */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+}
+
+/* Styling the body */
+
+body{
+    background-color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+
+/* Styling the main */
+
+main{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Removing the bullets in the navigation bar */
+
+nav{
+    text-align: center;
+    border: 1px;
+    border-radius: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    align-items: center;
+}
+
+/* Aligning list horizontally */
+
+nav li{
+    display: inline;    
+}
+
+/* Spacing the list items and removing  */
+
+nav ul li a{
+    padding: 15px;
+    text-decoration: none;
+    color: hsl(179, 100%, 13%);
+    margin: 50px;
+}
+
+/* Changing link colour on hover  */
+
+nav li a:hover{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 20px;
+}
+
+/* Allowing user know the current page they are on */
+
+.active{
+    background-color: hsl(184, 100%, 22%);
+    border-radius: 20px;
+}
+
+/* Making navigation bar fixed while scrolling through page */
+
+nav ul{
+    position: relative;
+    top: 30px;
+    width: 100%;
+}
+
+/* Styling the main div container */
+
+.container{
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    width: 900px;
+    height: 100vh;
+    padding: 90px;
+}
+
+/* Styling the sedans container */
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    width: 100%;
+    padding: 2em;
+    width: 300px;
+    height: 70vh;
+}
+
+.sedans h1{
+    font-size: bold;
+    color: hsl(0, 0%, 95%);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display';
+}
+
+.sedans p{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 80px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.sedans button{
+    color: hsl(31, 77%, 52%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.sedans button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.sedans, button:active{
+    background-color: hsl(31, 77%, 52%);
+}
+
+/* Styling the suvs container */
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    width: 100%;
+    padding: 2em;
+    width: 300px;
+    height: 70vh;
+}
+
+.suvs h1{
+    font-size: bold;
+    color: hsl(0, 0%, 95%);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display';
+}
+
+.suvs p{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 80px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.suvs button{
+    color: hsl(184, 100%, 22%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.suvs button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.suvs button:active{
+    background-color: hsl(184, 100%, 22%);
+}
+
+/* Styling the luxury container */
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    width: 100%;
+    padding: 2em;
+    width: 300px;
+    height: 70vh;
+}
+
+.luxury h1{
+    font-size: bold;
+    color: hsl(0, 0%, 95%);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display';
+}
+
+.luxury p{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 80px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.luxury button{
+    color: hsl(179, 100%, 13%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.luxury button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.luxury button:active{
+    background-color: hsl(179, 100%, 13%);
+}
+
+/* Media query mobile */
+
+@media screen and (min-width:375px) {
+    .container{
+        flex-direction: column;
+        width: 375px;
+    }
+    
+}
+
+/* Media query desktop */
+
+@media screen and (max-width:1440px) {
+    .container{
+        flex-direction: row;
+        width: 1440px;
+    }   
+}
+

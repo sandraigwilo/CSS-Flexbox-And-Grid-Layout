@@ -1,0 +1,116 @@
+/* CSS RESET */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+}
+
+/* Removing the bullets in the navigation bar */
+
+nav{
+    text-align: center;
+    border: 1px;
+    border-radius: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    align-items: center;
+}
+
+/* Aligning list horizontally */
+
+nav li{
+    display: inline;    
+}
+
+/* Spacing the list items and removing  */
+
+nav ul li a{
+    padding: 15px;
+    text-decoration: none;
+    color: hsl(180, 20%, 96%);
+    margin: 50px;
+}
+
+/* Changing link colour on hover  */
+
+nav li a:hover{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 20px;
+}
+
+/* Allowing user know the current page they are on */
+
+.active{
+    background-color: hsl(184, 100%, 22%);
+    border-radius: 20px;
+}
+
+/* Making navigation bar fixed while scrolling through page */
+
+nav ul{
+    position: fixed;
+    top: 30px;
+    width: 100%;
+}
+
+/* Styling the main div container */
+
+.container{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(6, 60px);
+    grid-template-rows: repeat(4, 60px);
+    grid-template-areas: 
+    'a a a a b b'
+    'a a a a b b'
+    'c c c d d d'
+    'c c c e e e'
+    ;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 5px;
+}
+
+.box{
+    padding: 30px;
+}
+
+/* Styling box1 */
+
+.box1{
+    background-color: rgb(181, 10, 10);
+    grid-area: a;
+}
+
+/* Styling box2 */
+
+.box2{
+    background-color: rgb(250, 163, 1);
+    grid-area: b;
+}
+
+/* Styling box3 */
+
+.box3{
+    background-color: rgb(13, 92, 13);
+    grid-area: c;
+}
+
+/* Styling box4 and 5 */
+
+.box4{
+    background-color: rgb(3, 95, 254);
+    grid-area: d;
+}
+
+/* Styling box5 */
+
+.box5{
+    background-color: rgb(19, 89, 211);
+    grid-area: e;
+}
