@@ -225,22 +225,22 @@ nav ul{
     background-color: hsl(179, 100%, 13%);
 }
 
+/* Media query desktop */
+
+@media screen and (max-width:1440px) {
+    body{
+        flex-direction: row;
+        width: 1440px;
+    }   
+}
+
 /* Media query mobile */
 
 @media screen and (min-width:375px) {
-    .container{
+    body{
         flex-direction: column;
         width: 375px;
     }
     
-}
-
-/* Media query desktop */
-
-@media screen and (max-width:1440px) {
-    .container{
-        flex-direction: row;
-        width: 1440px;
-    }   
 }
 
