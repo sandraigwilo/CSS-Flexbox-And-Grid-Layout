@@ -22,7 +22,10 @@ nav ul{
 /* Aligning list horizontally */
 
 nav li{
-    display: inline;    
+    display: inline;
+    font-family: 'Lexend Deca', sans-serif;
+    position: relative;
+    top: 80px;    
 }
 
 /* Spacing the list items and removing  */

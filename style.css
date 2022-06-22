@@ -16,12 +16,14 @@ body{
 /* Styling the main */
 
 main{
-    width: 50%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    background-color: hsl(0, 0%, 95%);
+    padding: 90px;
 }
 
 /* Removing the bullets in the navigation bar */
@@ -40,7 +42,10 @@ nav ul{
 /* Aligning list horizontally */
 
 nav li{
-    display: inline;    
+    display: inline;
+     position: relative;
+     top: 30px;
+     font-family: 'Lexend Deca', sans-serif;   
 }
 
 /* Spacing the list items and removing  */
@@ -74,16 +79,6 @@ nav ul{
     width: 100%;
 }
 
-/* Styling the main div container */
-
-.container{
-    background-color: hsl(0, 0%, 95%);
-    display: flex;
-    width: 900px;
-    height: 100vh;
-    padding: 90px;
-}
-
 /* Styling the sedans container */
 
 .sedans{
@@ -94,8 +89,8 @@ nav ul{
     height: 70vh;
 }
 
-.sedans h1{
-    font-size: bold;
+h1{
+
     color: hsl(0, 0%, 95%);
     padding-top: 20px;
     padding-bottom: 40px;
@@ -103,16 +98,17 @@ nav ul{
     font-family: 'Big Shoulders Display';
 }
 
-.sedans p{
+p{
     color: hsla(0, 0%, 100%, 0.75);
     padding-bottom: 80px;
     font-weight: 400;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
+    height: 50%;
+
 }
 
-.sedans button{
-    color: hsl(31, 77%, 52%);
+button{
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
@@ -120,15 +116,24 @@ nav ul{
     background-color: hsl(0, 0%, 95%);
     font-weight: 400;
     font-family: 'Lexend Deca', sans-serif;
+    border: thin solid hsl(0, 0%, 95%);
 }
 
-.sedans button:hover{
+.sedans button{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover{
     background-color: transparent;
-    color: white;
-}
-
-.sedans, button:active{
-    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
 }
 
 /* Styling the suvs container */
@@ -141,43 +146,6 @@ nav ul{
     height: 70vh;
 }
 
-.suvs h1{
-    font-size: bold;
-    color: hsl(0, 0%, 95%);
-    padding-top: 20px;
-    padding-bottom: 40px;
-    font-weight: 700;
-    font-family: 'Big Shoulders Display';
-}
-
-.suvs p{
-    color: hsla(0, 0%, 100%, 0.75);
-    padding-bottom: 80px;
-    font-weight: 400;
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-}
-
-.suvs button{
-    color: hsl(184, 100%, 22%);
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    text-align: center;
-    background-color: hsl(0, 0%, 95%);
-    font-weight: 400;
-    font-family: 'Lexend Deca', sans-serif;
-}
-
-.suvs button:hover{
-    background-color: transparent;
-    color: white;
-}
-
-.suvs button:active{
-    background-color: hsl(184, 100%, 22%);
-}
-
 /* Styling the luxury container */
 
 .luxury{
@@ -187,60 +155,3 @@ nav ul{
     width: 300px;
     height: 70vh;
 }
-
-.luxury h1{
-    font-size: bold;
-    color: hsl(0, 0%, 95%);
-    padding-top: 20px;
-    padding-bottom: 40px;
-    font-weight: 700;
-    font-family: 'Big Shoulders Display';
-}
-
-.luxury p{
-    color: hsla(0, 0%, 100%, 0.75);
-    padding-bottom: 80px;
-    font-weight: 400;
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-}
-
-.luxury button{
-    color: hsl(179, 100%, 13%);
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    text-align: center;
-    background-color: hsl(0, 0%, 95%);
-    font-weight: 400;
-    font-family: 'Lexend Deca', sans-serif;
-}
-
-.luxury button:hover{
-    background-color: transparent;
-    color: white;
-}
-
-.luxury button:active{
-    background-color: hsl(179, 100%, 13%);
-}
-
-/* Media query desktop */
-
-@media screen and (max-width:1440px) {
-    body{
-        flex-direction: row;
-        width: 1440px;
-    }   
-}
-
-/* Media query mobile */
-
-@media screen and (min-width:375px) {
-    body{
-        flex-direction: column;
-        width: 375px;
-    }
-    
-}
-
