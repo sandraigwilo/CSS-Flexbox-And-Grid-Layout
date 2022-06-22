@@ -81,7 +81,7 @@ nav ul{
 
 /* Styling the sedans container */
 
-.sedans{
+#sedans{
     background-color: hsl(31, 77%, 52%);
     width: 100%;
     padding: 2em;
@@ -119,7 +119,7 @@ button{
     border: thin solid hsl(0, 0%, 95%);
 }
 
-.sedans button{
+#sedans button{
     color: hsl(31, 77%, 52%);
 }
 
@@ -127,7 +127,7 @@ button{
     color: hsl(184, 100%, 22%);
 }
 
-.luxury button{
+#luxury button{
     color: hsl(179, 100%, 13%);
 }
 
@@ -138,7 +138,7 @@ button:hover{
 
 /* Styling the suvs container */
 
-.suvs{
+#suvs{
     background-color: hsl(184, 100%, 22%);
     width: 100%;
     padding: 2em;
@@ -148,10 +148,23 @@ button:hover{
 
 /* Styling the luxury container */
 
-.luxury{
+#luxury{
     background-color: hsl(179, 100%, 13%);
     width: 100%;
     padding: 2em;
     width: 300px;
     height: 70vh;
+}
+
+@media screen and (min-width: 1440px) {
+    main{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (min-width: 375px) {
+    main{
+        flex-direction: row;
+    }
 }
