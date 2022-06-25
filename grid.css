@@ -117,3 +117,29 @@ nav ul{
     background-color: rgb(19, 89, 211);
     grid-area: e;
 }
+
+@media screen and (max-width:1440px) {
+    body{
+        background-color: black;
+    }
+    .container{
+        flex-direction: row;
+        width: 100%;
+    }
+    .box1, .box2, .box3, .box4, .box5{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body{
+        background-color: black;
+    }
+    .container{
+        flex-direction: column;
+        height: 100%;
+    }
+    .box1, .box2, .box3, .box4, .box5{
+        height: 20%;
+    }
+}
