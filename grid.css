@@ -16,25 +16,21 @@ nav{
 
 nav ul{
     list-style-type: none;
-    align-items: center;
 }
 
 /* Aligning list horizontally */
 
 nav li{
     display: inline;
-    font-family: 'Lexend Deca', sans-serif;
-    position: relative;
-    top: 80px;    
+    font-family: 'Lexend Deca', sans-serif;   
 }
 
 /* Spacing the list items and removing  */
 
 nav ul li a{
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
-    color: hsl(180, 20%, 96%);
-    margin: 50px;
+    color: hsl(179, 100%, 13%);
 }
 
 /* Changing link colour on hover  */
@@ -54,7 +50,7 @@ nav li a:hover{
 /* Making navigation bar fixed while scrolling through page */
 
 nav ul{
-    position: fixed;
+    position: relative;
     top: 30px;
     width: 100%;
 }

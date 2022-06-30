@@ -16,9 +16,8 @@ body{
 /* Styling the main */
 
 main{
-    width: 80%;
-    margin: auto;
-    display: flex;
+    width: 100%;
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -36,25 +35,21 @@ nav{
 
 nav ul{
     list-style-type: none;
-    align-items: center;
 }
 
 /* Aligning list horizontally */
 
 nav li{
     display: inline;
-     position: relative;
-     top: 30px;
-     font-family: 'Lexend Deca', sans-serif;   
+    font-family: 'Lexend Deca', sans-serif;   
 }
 
 /* Spacing the list items and removing  */
 
 nav ul li a{
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
     color: hsl(179, 100%, 13%);
-    margin: 50px;
 }
 
 /* Changing link colour on hover  */
@@ -83,7 +78,6 @@ nav ul{
 
 #sedans{
     background-color: hsl(31, 77%, 52%);
-    width: 100%;
     padding: 2em;
     width: 300px;
     height: 70vh;
@@ -123,7 +117,7 @@ button{
     color: hsl(31, 77%, 52%);
 }
 
-.suvs button{
+#suvs button{
     color: hsl(184, 100%, 22%);
 }
 
@@ -132,15 +126,15 @@ button{
 }
 
 button:hover{
+    border: 1px solid hsl(0, 0%, 95%);
     background-color: transparent;
-    color: hsl(0, 0%, 95%);
+    color: white !important;
 }
 
 /* Styling the suvs container */
 
 #suvs{
     background-color: hsl(184, 100%, 22%);
-    width: 100%;
     padding: 2em;
     width: 300px;
     height: 70vh;
@@ -150,8 +144,43 @@ button:hover{
 
 #luxury{
     background-color: hsl(179, 100%, 13%);
-    width: 100%;
     padding: 2em;
     width: 300px;
     height: 70vh;
+}
+
+@media screen and (min-width:1440px) {
+    main{
+        display: flex;
+    }
+
+    nav ul li a{
+        padding: 15px 20px;
+    }
+
+    #sedans{
+        height: 50vh;
+    }
+    
+    p{
+        width: 60%;
+        line-height: 25px;
+    }
+    
+    button{
+        padding: 10px 30px;
+    }
+    
+    /* Styling the suvs container */
+    
+    #suvs{
+        height: 50vh;
+    }
+    
+    /* Styling the luxury container */
+    
+    #luxury{
+        height: 50vh;
+    }
+    
 }
