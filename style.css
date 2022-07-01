@@ -149,17 +149,13 @@ button:hover{
     height: 70vh;
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1024px) {
     main{
         display: flex;
     }
 
     nav ul li a{
         padding: 15px 20px;
-    }
-
-    #sedans{
-        height: 50vh;
     }
     
     p{
@@ -170,17 +166,4 @@ button:hover{
     button{
         padding: 10px 30px;
     }
-    
-    /* Styling the suvs container */
-    
-    #suvs{
-        height: 50vh;
-    }
-    
-    /* Styling the luxury container */
-    
-    #luxury{
-        height: 50vh;
-    }
-    
 }
